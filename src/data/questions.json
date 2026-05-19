@@ -1,0 +1,1162 @@
+[
+  {
+    "studentId": 1,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Maria's favorite color?",
+        "options": ["Blue", "Pink", "Green", "Purple"],
+        "answer": "Pink",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Maria loves to paint and draw.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How many pets does Maria have?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 2,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What sport does João play?",
+        "options": ["Soccer", "Basketball", "Tennis", "Volleyball"],
+        "answer": "Soccer",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "João's dream is to be a professional soccer player.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What number does João wear on his soccer jersey?",
+        "options": ["7", "10", "9", "11"],
+        "answer": "10",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 3,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Ana's favorite subject in school?",
+        "options": ["Math", "Science", "History", "Portuguese"],
+        "answer": "Science",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Ana enjoys reading mystery books.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "What does Ana want to be when she grows up?",
+        "options": ["Scientist", "Teacher", "Doctor", "Engineer"],
+        "answer": "Scientist",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 4,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Carlos's favorite hobby?",
+        "options": ["Video games", "Building models", "Cycling", "Drawing"],
+        "answer": "Building models",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Carlos is very good at solving puzzles.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What type of models does Carlos like to build?",
+        "options": ["Cars", "Robots", "Airplanes", "Ships"],
+        "answer": "Robots",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 5,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Sofia's favorite musical instrument?",
+        "options": ["Piano", "Guitar", "Violin", "Flute"],
+        "answer": "Piano",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Sofia takes piano lessons every week.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How long has Sofia been playing piano?",
+        "options": ["1 year", "2 years", "3 years", "4 years"],
+        "answer": "3 years",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 6,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Pedro is a member of the school's basketball team.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What is Pedro's favorite snack?",
+        "options": ["Popcorn", "Chocolate", "Chips", "Fruit"],
+        "answer": "Popcorn",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "What position does Pedro play in basketball?",
+        "options": ["Guard", "Forward", "Center", "Coach"],
+        "answer": "Guard",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 7,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Lucia's favorite animal?",
+        "options": ["Dog", "Cat", "Horse", "Rabbit"],
+        "answer": "Horse",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Lucia has riding lessons every Saturday.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What is the name of Lucia's horse?",
+        "options": ["Star", "Luna", "Beauty", "Prince"],
+        "answer": "Luna",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 8,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What does Miguel love to cook?",
+        "options": ["Pizza", "Pasta", "Cake", "Cookies"],
+        "answer": "Pizza",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Miguel attends cooking classes on Sundays.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What is Miguel's signature ingredient?",
+        "options": ["Basil", "Garlic", "Cheese", "Olive oil"],
+        "answer": "Basil",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 9,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Elena is part of the school's dance group.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What style of dance does Elena practice?",
+        "options": ["Ballet", "Hip-hop", "Contemporary", "Jazz"],
+        "answer": "Contemporary",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "How often does Elena have dance rehearsals?",
+        "options": ["Once a week", "Twice a week", "Three times a week", "Every day"],
+        "answer": "Twice a week",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 10,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Lucas's favorite video game?",
+        "options": ["Chess", "Adventure Quest", "Racing", "Puzzle Master"],
+        "answer": "Adventure Quest",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Lucas is part of the school's gaming club.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What achievement has Lucas reached in his favorite game?",
+        "options": ["Level 10", "Level 50", "Level 100", "Final Boss"],
+        "answer": "Level 100",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 11,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Isabela's favorite book series?",
+        "options": ["Fantasy Quest", "Mystery Manor", "Adventure Island", "Fairy Tales"],
+        "answer": "Fantasy Quest",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Isabela wants to be an author when she grows up.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How many books has Isabela written so far?",
+        "options": ["1", "3", "5", "7"],
+        "answer": "3",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 12,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Rafael is on the school's rowing team.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What is Rafael's favorite water activity?",
+        "options": ["Swimming", "Rowing", "Sailing", "Diving"],
+        "answer": "Rowing",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "Where does Rafael practice rowing?",
+        "options": ["River", "Lake", "Ocean", "Pool"],
+        "answer": "River",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 13,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What does Camila love to do in her free time?",
+        "options": ["Garden", "Sketch", "Sing", "Write poetry"],
+        "answer": "Sketch",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Camila attends art classes at the community center.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What is Camila's favorite art medium?",
+        "options": ["Watercolor", "Charcoal", "Pencil", "Oil paint"],
+        "answer": "Watercolor",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 14,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Diego's favorite subject?",
+        "options": ["English", "Mathematics", "Geography", "History"],
+        "answer": "Geography",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Diego collects maps from different countries.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How many countries has Diego visited?",
+        "options": ["3", "5", "7", "10"],
+        "answer": "5",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 15,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Fátima is interested in environmental conservation.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What environmental project is Fátima involved in?",
+        "options": ["Tree planting", "Ocean cleanup", "Wildlife protection", "Recycling"],
+        "answer": "Tree planting",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "How many trees has Fátima's group planted?",
+        "options": ["50", "100", "200", "500"],
+        "answer": "200",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 16,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Gabriel's favorite outdoor activity?",
+        "options": ["Hiking", "Camping", "Rock climbing", "Kayaking"],
+        "answer": "Rock climbing",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Gabriel has climbed three different mountains.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What is the highest mountain Gabriel has climbed?",
+        "options": ["1000m", "1500m", "2000m", "2500m"],
+        "answer": "2000m",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 17,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Amelia volunteers at the animal shelter.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What is Amelia's favorite animal to care for?",
+        "options": ["Dogs", "Cats", "Rabbits", "Birds"],
+        "answer": "Dogs",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How often does Amelia volunteer?",
+        "options": ["Weekly", "Bi-weekly", "Monthly", "Daily"],
+        "answer": "Weekly",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 18,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What does Tomás love about science?",
+        "options": ["Experiments", "Astronomy", "Biology", "Chemistry"],
+        "answer": "Astronomy",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Tomás has a telescope at home.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "What is Tomás's favorite planet to observe?",
+        "options": ["Mars", "Jupiter", "Saturn", "Venus"],
+        "answer": "Saturn",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 19,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Vera's favorite form of exercise?",
+        "options": ["Running", "Swimming", "Yoga", "Gymnastics"],
+        "answer": "Yoga",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Vera teaches yoga to her classmates.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How long has Vera been practicing yoga?",
+        "options": ["6 months", "1 year", "2 years", "3 years"],
+        "answer": "2 years",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 20,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Samuel is the school's chess champion.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "How many chess tournaments has Samuel won?",
+        "options": ["1", "3", "5", "7"],
+        "answer": "5",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "What is Samuel's favorite chess opening?",
+        "options": ["Italian Game", "Sicilian Defense", "French Defense", "Ruy Lopez"],
+        "answer": "Sicilian Defense",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 21,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Francisca's hidden talent?",
+        "options": ["Juggling", "Magic tricks", "Ventriloquism", "Acrobatics"],
+        "answer": "Juggling",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Francisca performed at the school talent show.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How many objects can Francisca juggle at once?",
+        "options": ["3", "5", "7", "9"],
+        "answer": "7",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 22,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Duarte is a member of the debate team.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What topics does Duarte like to debate?",
+        "options": ["Sports", "Politics", "Technology", "Environment"],
+        "answer": "Environment",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "How many debate competitions has Duarte won?",
+        "options": ["2", "4", "6", "8"],
+        "answer": "4",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 23,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What does Rita collect?",
+        "options": ["Stamps", "Coins", "Vintage records", "Comic books"],
+        "answer": "Vintage records",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Rita has over 100 records in her collection.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What is Rita's oldest record?",
+        "options": ["1960s", "1970s", "1980s", "1990s"],
+        "answer": "1960s",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 24,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Afonso is interested in mechanical engineering.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What does Afonso like to build most?",
+        "options": ["Engines", "Robots", "Machines", "Bridges"],
+        "answer": "Machines",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "What tool is Afonso's favorite?",
+        "options": ["Hammer", "Wrench", "Screwdriver", "Drill"],
+        "answer": "Wrench",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 25,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What sport does Joana participate in?",
+        "options": ["Tennis", "Badminton", "Squash", "Volleyball"],
+        "answer": "Badminton",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Joana is ranked in her regional badminton league.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What is Joana's current ranking?",
+        "options": ["5th", "10th", "15th", "20th"],
+        "answer": "10th",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 26,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Nuno loves photography.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What is Nuno's favorite subject to photograph?",
+        "options": ["People", "Nature", "Buildings", "Animals"],
+        "answer": "Nature",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "What type of camera does Nuno use?",
+        "options": ["Digital SLR", "Film camera", "Smartphone", "Instant camera"],
+        "answer": "Digital SLR",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 27,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What language is Madalena learning besides Portuguese?",
+        "options": ["Spanish", "French", "German", "Italian"],
+        "answer": "French",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Madalena speaks French fluently.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How long has Madalena been learning French?",
+        "options": ["1 year", "2 years", "3 years", "4 years"],
+        "answer": "3 years",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 28,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Gonçalo is on the school's swimming team.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What is Gonçalo's strongest swimming stroke?",
+        "options": ["Freestyle", "Backstroke", "Breaststroke", "Butterfly"],
+        "answer": "Butterfly",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "What is Gonçalo's best time in the 100m freestyle?",
+        "options": ["55 seconds", "60 seconds", "65 seconds", "70 seconds"],
+        "answer": "60 seconds",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 29,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Inês's favorite type of music?",
+        "options": ["Pop", "Rock", "Classical", "Jazz"],
+        "answer": "Classical",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Inês plays in the school orchestra.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What instrument does Inês play in the orchestra?",
+        "options": ["Violin", "Cello", "Flute", "Clarinet"],
+        "answer": "Cello",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 30,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Óscar is interested in film making.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "How many short films has Óscar made?",
+        "options": ["2", "4", "6", "8"],
+        "answer": "4",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "What genre are Óscar's films?",
+        "options": ["Comedy", "Drama", "Adventure", "Fantasy"],
+        "answer": "Fantasy",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 31,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What does Célia want to study in university?",
+        "options": ["Medicine", "Law", "Engineering", "Architecture"],
+        "answer": "Architecture",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Célia designs buildings in her spare time.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How many building designs has Célia completed?",
+        "options": ["5", "10", "15", "20"],
+        "answer": "10",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 32,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Paulo is a competitive programmer.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What programming language does Paulo prefer?",
+        "options": ["Python", "Java", "C++", "JavaScript"],
+        "answer": "C++",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "How many programming competitions has Paulo won?",
+        "options": ["3", "5", "7", "9"],
+        "answer": "5",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 33,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Lurdes's favorite hobby?",
+        "options": ["Knitting", "Sewing", "Embroidery", "Quilting"],
+        "answer": "Embroidery",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Lurdes has won several awards for her embroidery.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What is Lurdes's favorite embroidery technique?",
+        "options": ["Cross-stitch", "French knots", "Chain stitch", "Backstitch"],
+        "answer": "French knots",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 34,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Rui is on the school's track and field team.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What event does Rui compete in?",
+        "options": ["100m sprint", "Long jump", "High jump", "Javelin"],
+        "answer": "Long jump",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "What is Rui's personal best long jump distance?",
+        "options": ["5m", "6m", "7m", "8m"],
+        "answer": "6m",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 35,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What sport does Soraia play?",
+        "options": ["Handball", "Volleyball", "Basketball", "Netball"],
+        "answer": "Handball",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Soraia is the captain of her team.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How many goals has Soraia scored this season?",
+        "options": ["20", "40", "60", "80"],
+        "answer": "60",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 36,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Vasco is interested in archaeology.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What archaeological period fascinates Vasco most?",
+        "options": ["Ancient Rome", "Medieval", "Bronze Age", "Ancient Egypt"],
+        "answer": "Ancient Rome",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "How many archaeological digs has Vasco participated in?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 37,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What does Matilde love to create?",
+        "options": ["Jewelry", "Ceramics", "Glass art", "Sculpture"],
+        "answer": "Jewelry",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Matilde sells her jewelry at the local market.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "What is Matilde's favorite material?",
+        "options": ["Silver", "Gold", "Beads", "Crystals"],
+        "answer": "Silver",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 38,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Estêvão is a skilled guitarist.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What style of guitar does Estêvão play?",
+        "options": ["Classical", "Electric", "Acoustic", "Bass"],
+        "answer": "Electric",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "Does Estêvão have his own band?",
+        "options": ["Yes", "No", "Planning to start one", "Used to have one"],
+        "answer": "Yes",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 39,
+    "questions": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What is Irmandade's favorite subject?",
+        "options": ["Biology", "Chemistry", "Physics", "Botany"],
+        "answer": "Botany",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "true-false",
+        "question": "Irmandade has a school garden project.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "multiple-choice",
+        "question": "How many plant species does Irmandade grow?",
+        "options": ["10", "15", "20", "25"],
+        "answer": "20",
+        "points": 20
+      }
+    ]
+  },
+  {
+    "studentId": 40,
+    "questions": [
+      {
+        "id": 1,
+        "type": "true-false",
+        "question": "Zeferino is interested in history.",
+        "options": ["True", "False"],
+        "answer": "True",
+        "points": 10
+      },
+      {
+        "id": 2,
+        "type": "multiple-choice",
+        "question": "What historical period does Zeferino study most?",
+        "options": ["Portuguese discoveries", "World War II", "Renaissance", "Industrial Revolution"],
+        "answer": "Portuguese discoveries",
+        "points": 10
+      },
+      {
+        "id": 3,
+        "type": "image-choice",
+        "question": "How many history books has Zeferino read this year?",
+        "options": ["5", "10", "15", "20"],
+        "answer": "15",
+        "points": 20
+      }
+    ]
+  }
+]
