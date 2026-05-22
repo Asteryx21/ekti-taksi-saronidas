@@ -46,9 +46,9 @@ const playAgain = () => {
       </div>
 
       <div class="actions">
-        <button @click="playAgain" class="play-btn">
+        <!-- <button @click="playAgain" class="play-btn">
           Play Again 🎮
-        </button>
+        </button> -->
         <button @click="$router.push('/')" class="home-btn">
           Home
         </button>

@@ -125,12 +125,12 @@ const goHome = () => {
       </div>
 
       <div class="actions">
-        <button
+        <!-- <button
           @click="nextStudent"
           class="action-btn next-btn"
         >
           Next Student →
-        </button>
+        </button> -->
 
         <button
           @click="viewLeaderboard"

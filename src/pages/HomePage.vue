@@ -10,6 +10,10 @@ const error = ref('')
 
 const canStart = computed(() => username.value.trim().length >= 2)
 
+const goToLeaderboard = () => {
+  router.push('/leaderboard')
+}
+
 const startGame = () => {
   error.value = ''
   
@@ -34,7 +38,7 @@ const handleKeyup = (e) => {
     <div class="content">
       <div class="header">
         <h1 class="title">🎮 Saronida Quiz Game</h1>
-        <p class="subtitle">Welcome! Enter your username to start playing.</p>
+        <p class="subtitle">Enter your username to start playing.</p>
       </div>
 
       <div class="form-container">
@@ -63,13 +67,7 @@ const handleKeyup = (e) => {
 
       <div class="info">
         <div class="info-item">
-          <span>📚 2-3 questions per student</span>
-        </div>
-        <div class="info-item">
-          <span>⭐ Earn points and climb the leaderboard</span>
-        </div>
-        <div class="info-item">
-          <span>🏆 Challenge all 40 students</span>
+          <span @click="goToLeaderboard" >🏆 Leaderboard</span>
         </div>
       </div>
     </div>
