@@ -16,14 +16,14 @@ const goToLeaderboard = () => {
 
 const startGame = () => {
   error.value = ''
-  
+
   if (!canStart.value) {
     error.value = 'Username must be at least 2 characters'
     return
   }
-  
+
   gameState.setUsername(username.value.trim())
-  router.push('/select-class')
+  router.push('/students')
 }
 
 const handleKeyup = (e) => {
@@ -43,9 +43,9 @@ const handleKeyup = (e) => {
 
       <div class="form-container">
         <div class="form-group">
-          <input 
-            v-model="username" 
-            type="text" 
+          <input
+            v-model="username"
+            type="text"
             placeholder="Enter your username"
             class="username-input"
             maxlength="20"
@@ -56,8 +56,8 @@ const handleKeyup = (e) => {
           <p class="char-count">{{ username.length }}/20</p>
         </div>
 
-        <button 
-          @click="startGame" 
+        <button
+          @click="startGame"
           :disabled="!canStart"
           class="start-button"
         >
@@ -67,7 +67,7 @@ const handleKeyup = (e) => {
 
       <div class="info">
         <div class="info-item">
-          <span @click="goToLeaderboard" >🏆 Leaderboard</span>
+          <span @click="goToLeaderboard">🏆 Leaderboard</span>
         </div>
       </div>
     </div>

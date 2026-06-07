@@ -6,28 +6,10 @@
     "avatar": "girl1.png"
   },
   {
-    "id": 2,
-    "name": "João Santos",
-    "class": "A",
-    "avatar": "boy1.png"
-  },
-  {
-    "id": 3,
-    "name": "Ana Costa",
-    "class": "A",
-    "avatar": "girl2.png"
-  },
-  {
     "id": 4,
     "name": "Carlos Oliveira",
     "class": "A",
     "avatar": "boy2.png"
-  },
-  {
-    "id": 5,
-    "name": "Sofia Ferreira",
-    "class": "A",
-    "avatar": "girl3.png"
   },
   {
     "id": 6,
@@ -40,12 +22,6 @@
     "name": "Lucia Gomes",
     "class": "A",
     "avatar": "girl4.png"
-  },
-  {
-    "id": 8,
-    "name": "Miguel Rocha",
-    "class": "A",
-    "avatar": "boy4.png"
   },
   {
     "id": 9,
@@ -66,30 +42,6 @@
     "avatar": "girl6.png"
   },
   {
-    "id": 12,
-    "name": "Rafael Dias",
-    "class": "A",
-    "avatar": "boy6.png"
-  },
-  {
-    "id": 13,
-    "name": "Camila Barbosa",
-    "class": "A",
-    "avatar": "girl7.png"
-  },
-  {
-    "id": 14,
-    "name": "Diego Monteiro",
-    "class": "A",
-    "avatar": "boy7.png"
-  },
-  {
-    "id": 15,
-    "name": "Fátima Cardoso",
-    "class": "A",
-    "avatar": "girl8.png"
-  },
-  {
     "id": 16,
     "name": "Gabriel Lopes",
     "class": "A",
@@ -106,24 +58,6 @@
     "name": "Tomás Gonçalves",
     "class": "A",
     "avatar": "boy9.png"
-  },
-  {
-    "id": 19,
-    "name": "Vera Sousa",
-    "class": "A",
-    "avatar": "girl10.png"
-  },
-  {
-    "id": 20,
-    "name": "Samuel Moreira",
-    "class": "A",
-    "avatar": "boy10.png"
-  },
-  {
-    "id": 21,
-    "name": "Francisca Correia",
-    "class": "B",
-    "avatar": "girl1.png"
   },
   {
     "id": 22,
@@ -150,40 +84,10 @@
     "avatar": "girl3.png"
   },
   {
-    "id": 26,
-    "name": "Nuno Machado",
-    "class": "B",
-    "avatar": "boy3.png"
-  },
-  {
-    "id": 27,
-    "name": "Madalena Mendes",
-    "class": "B",
-    "avatar": "girl4.png"
-  },
-  {
-    "id": 28,
-    "name": "Gonçalo Teixeira",
-    "class": "B",
-    "avatar": "boy4.png"
-  },
-  {
     "id": 29,
     "name": "Inês Henriques",
     "class": "B",
     "avatar": "girl5.png"
-  },
-  {
-    "id": 30,
-    "name": "Óscar Fonseca",
-    "class": "B",
-    "avatar": "boy5.png"
-  },
-  {
-    "id": 31,
-    "name": "Célia Castro",
-    "class": "B",
-    "avatar": "girl6.png"
   },
   {
     "id": 32,
@@ -198,40 +102,10 @@
     "avatar": "girl7.png"
   },
   {
-    "id": 34,
-    "name": "Rui Miranda",
-    "class": "B",
-    "avatar": "boy7.png"
-  },
-  {
-    "id": 35,
-    "name": "Soraia Guerreiro",
-    "class": "B",
-    "avatar": "girl8.png"
-  },
-  {
-    "id": 36,
-    "name": "Vasco Quaresma",
-    "class": "B",
-    "avatar": "boy8.png"
-  },
-  {
     "id": 37,
     "name": "Matilde Carneiro",
     "class": "B",
     "avatar": "girl9.png"
-  },
-  {
-    "id": 38,
-    "name": "Estêvão Almeida",
-    "class": "B",
-    "avatar": "boy9.png"
-  },
-  {
-    "id": 39,
-    "name": "Irmandade Brandão",
-    "class": "B",
-    "avatar": "girl10.png"
   },
   {
     "id": 40,

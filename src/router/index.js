@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
-import ClassSelectPage from '../pages/ClassSelectPage.vue'
 import StudentSelectPage from '../pages/StudentSelectPage.vue'
 import QuizPage from '../pages/QuizPage.vue'
 import ResultPage from '../pages/ResultPage.vue'
@@ -16,14 +15,17 @@ const router = createRouter({
       component: HomePage,
     },
     {
+      path: '/students',
+      name: 'StudentSelect',
+      component: StudentSelectPage,
+    },
+    {
       path: '/select-class',
-      name: 'ClassSelect',
-      component: ClassSelectPage,
+      redirect: '/students',
     },
     {
       path: '/students/:classId',
-      name: 'StudentSelect',
-      component: StudentSelectPage,
+      redirect: '/students',
     },
     {
       path: '/quiz/:studentId',

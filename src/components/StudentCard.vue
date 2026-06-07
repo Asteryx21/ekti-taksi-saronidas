@@ -15,7 +15,6 @@
 
     <div class="card-body">
       <h3 class="student-name">{{ student.name }}</h3>
-      <p v-if="student.class" class="student-class">{{ student.class }}</p>
     </div>
 
     <div v-if="completed" class="stars">
@@ -35,7 +34,7 @@ const props = defineProps({
       return (
         value.id !== undefined &&
         typeof value.name === 'string'
-      );
+      )
     },
   },
   completed: {
@@ -46,11 +45,11 @@ const props = defineProps({
     type: Function,
     required: true,
   },
-});
+})
 
 const handleSelect = () => {
-  props.onSelect(props.student.id);
-};
+  props.onSelect(props.student.id)
+}
 </script>
 
 <style scoped>
@@ -138,13 +137,6 @@ const handleSelect = () => {
   font-size: 1.1rem;
   font-weight: 600;
   color: var(--color-gray-dark);
-  font-family: var(--font-primary);
-}
-
-.student-class {
-  margin: var(--spacing-xs) 0 0;
-  font-size: 0.85rem;
-  color: var(--color-purple);
   font-family: var(--font-primary);
 }
 

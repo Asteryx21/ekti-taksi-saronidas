@@ -30,14 +30,6 @@ const totalQuestions = computed(() => {
   return gameState.answerHistory.value.length
 })
 
-const nextStudent = () => {
-  gameState.resetQuiz()
-
-  const currentClass = student.value?.class
-
-  router.push(`/students/${currentClass}`)
-}
-
 const viewLeaderboard = () => {
   gameState.resetQuiz()
   router.push('/leaderboard')
@@ -64,10 +56,6 @@ const goHome = () => {
 
       <div class="result-card">
         <h2>{{ student?.name }}</h2>
-
-        <p class="class-info">
-          Class {{ student?.class }}
-        </p>
 
         <div class="score-section">
           <div class="score-display">
@@ -125,13 +113,6 @@ const goHome = () => {
       </div>
 
       <div class="actions">
-        <!-- <button
-          @click="nextStudent"
-          class="action-btn next-btn"
-        >
-          Next Student →
-        </button> -->
-
         <button
           @click="viewLeaderboard"
           class="action-btn leaderboard-btn"
@@ -202,12 +183,6 @@ const goHome = () => {
   font-size: 1.8rem;
 }
 
-.class-info {
-  color: var(--color-gray-dark);
-  margin: 0 0 var(--spacing-lg) 0;
-  font-size: 0.95rem;
-}
-
 .score-section {
   text-align: center;
   padding: var(--spacing-lg);
@@ -259,7 +234,7 @@ const goHome = () => {
     rgba(235, 169, 9, 0.1),
     rgba(241, 174, 216, 0.1)
   );
-  border-left-color: var(--color-yellow);
+  border-left-color: var(--color-purple);
 }
 
 .detail-label {
@@ -273,98 +248,67 @@ const goHome = () => {
 }
 
 .detail-value.total {
+  font-size: 1.2rem;
   color: var(--color-gold);
-  font-size: 1.1rem;
 }
 
 .completion-badge {
   text-align: center;
   padding: var(--spacing-md);
-  background: linear-gradient(
-    135deg,
-    var(--color-yellow),
-    var(--color-gold)
-  );
-  border-radius: var(--radius-md);
-  font-weight: 700;
-  font-size: 1.1rem;
+  background: linear-gradient(135deg, var(--color-gold), var(--color-pink));
   color: var(--color-white);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: var(--radius-md);
+  animation: pulse 1.5s ease-in-out infinite;
 }
 
 .actions {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-md);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
 }
 
 .action-btn {
+  width: 100%;
   padding: var(--spacing-md);
   font-size: 1.1rem;
   font-weight: 700;
-  border: 3px solid;
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.next-btn {
-  background: linear-gradient(
-    135deg,
-    var(--color-gold),
-    var(--color-yellow)
-  );
-  border-color: var(--color-gold);
-  color: var(--color-white);
-}
-
-.next-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(235, 169, 9, 0.3);
+  border: 3px solid var(--color-purple);
 }
 
 .leaderboard-btn {
-  background: linear-gradient(
-    135deg,
-    var(--color-purple),
-    var(--color-pink)
-  );
-  border-color: var(--color-purple);
-  color: var(--color-white);
-}
-
-.leaderboard-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(206, 106, 199, 0.3);
-}
-
-.back-option {
-  text-align: center;
+  background: var(--color-white);
+  color: var(--color-purple);
 }
 
 .home-link {
-  background: var(--color-white);
+  width: 100%;
+  background: transparent;
   color: var(--color-purple);
-  border: 2px solid var(--color-purple);
-  padding: var(--spacing-sm) var(--spacing-md);
-}
-
-.home-link:hover {
-  transform: translateX(-4px);
+  padding: var(--spacing-sm);
+  font-size: 0.95rem;
 }
 
 @media (max-width: 640px) {
+  .result-page {
+    padding: var(--spacing-md);
+  }
+
   .result-card {
     padding: var(--spacing-lg);
   }
 
-  .result-card h2 {
-    font-size: 1.5rem;
+  .celebration,
+  .result-title {
+    font-size: 1.6rem;
   }
 
   .score-value {
     font-size: 2rem;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    gap: var(--spacing-xs);
   }
 }
 </style>

@@ -37,7 +37,7 @@ const handleAnswer = (answer) => {
   }
 
   const quizComplete = gameState.submitAnswer(answer)
-  
+
   if (quizComplete) {
     audio.playComplete()
     setTimeout(() => {
@@ -59,19 +59,18 @@ const goBack = () => {
         <button @click="goBack" class="back-button">← Back</button>
         <div class="student-info">
           <h2>{{ student?.name }}</h2>
-          <p class="class-label">Class {{ student?.class }}</p>
         </div>
       </header>
 
       <div class="progress-section">
-        <ProgressBar 
-          :current="progress.current" 
+        <ProgressBar
+          :current="progress.current"
           :total="progress.total"
         />
       </div>
 
       <div class="question-section">
-        <QuestionCard 
+        <QuestionCard
           v-if="currentQuestion"
           :question="currentQuestion"
           :student-name="student?.name"
@@ -128,12 +127,6 @@ const goBack = () => {
 .student-info h2 {
   margin: 0;
   font-size: 1.5rem;
-}
-
-.class-label {
-  margin: var(--spacing-xs) 0 0 0;
-  color: var(--color-gray-dark);
-  font-size: 0.9rem;
 }
 
 .progress-section {

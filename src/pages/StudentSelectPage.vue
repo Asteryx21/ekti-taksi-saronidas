@@ -1,31 +1,21 @@
 <script setup>
-import { ref, onMounted, computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { computed } from 'vue'
+import { useRouter } from 'vue-router'
 import { useGameState } from '../composables/useGameState'
 import StudentCard from '../components/StudentCard.vue'
 import studentsData from '../data/students.json'
 
-const route = useRoute()
 const router = useRouter()
 const gameState = useGameState()
 
-const classId = route.params.classId
-const students = ref([])
-
-const filteredStudents = computed(() => {
-  return students.value.filter(s => s.class === classId)
-})
-
-onMounted(() => {
-  students.value = studentsData
-})
+const students = computed(() => studentsData)
 
 const selectStudent = (studentId) => {
-  router.push(`/quiz/${studentId}`)
+  router.push('/quiz/' + studentId)
 }
 
 const goBack = () => {
-  router.push('/select-class')
+  router.push('/')
 }
 </script>
 
@@ -34,13 +24,13 @@ const goBack = () => {
     <div class="container">
       <header class="header">
         <button @click="goBack" class="back-button">← Back</button>
-        <h1>Class {{ classId }} - Students</h1>
-        <p>{{ filteredStudents.length }} students available</p>
+        <h1>Select a Student</h1>
+        <p>{{ students.length }} students available</p>
       </header>
 
       <div class="student-grid">
-        <StudentCard 
-          v-for="student in filteredStudents"
+        <StudentCard
+          v-for="student in students"
           :key="student.id"
           :student="student"
           :completed="gameState.completedStudents.value.includes(student.id)"
@@ -48,8 +38,8 @@ const goBack = () => {
         />
       </div>
 
-      <div v-if="filteredStudents.length === 0" class="no-students">
-        <p>No students found in this class.</p>
+      <div v-if="students.length === 0" class="no-students">
+        <p>No students found.</p>
       </div>
     </div>
   </div>
