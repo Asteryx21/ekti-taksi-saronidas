@@ -10,16 +10,16 @@
       </thead>
       <tbody>
         <tr
-          v-for="(entry, index) in sortedScores"
-          :key="index"
+          v-for="entry in groupedScores"
+          :key="entry.score"
           class="table-row"
-          :class="['rank-' + (index + 1)]"
+          :class="['rank-' + getRankForScore(entry.score)]"
         >
           <td class="rank-cell">
-            <span class="medal">{{ getMedal(index) }}</span>
-            <span class="rank-number">{{ index + 1 }}</span>
+            <span class="medal">{{ getMedal(getRankForScore(entry.score) - 1) }}</span>
+            <span class="rank-number">{{ getRankForScore(entry.score) }}</span>
           </td>
-          <td class="name-cell">{{ entry.username }}</td>
+          <td class="name-cell">{{ entry.usernames.join(', ') }}</td>
           <td class="score-cell">{{ entry.score }}</td>
         </tr>
       </tbody>
@@ -46,9 +46,35 @@ const sortedScores = computed(() => {
   return [...props.scores].sort((a, b) => b.score - a.score);
 });
 
+const groupedScores = computed(() => {
+  const groups = new Map()
+
+  for (const entry of sortedScores.value) {
+    if (!groups.has(entry.score)) {
+      groups.set(entry.score, { score: entry.score, usernames: [] })
+    }
+
+    groups.get(entry.score).usernames.push(entry.username)
+  }
+
+  return [...groups.values()]
+});
+
+const getRankForScore = (score) => {
+  const uniqueHigherScores = new Set()
+
+  for (const entry of sortedScores.value) {
+    if (entry.score > score) {
+      uniqueHigherScores.add(entry.score)
+    }
+  }
+
+  return uniqueHigherScores.size + 1
+}
+
 const getMedal = (index) => {
-  const medals = ['🥇', '🥈', '🥉'];
-  return medals[index] || '•';
+  const medals = ['🥇', '🥈', '🥉']
+  return medals[index] || '•'
 };
 </script>
 

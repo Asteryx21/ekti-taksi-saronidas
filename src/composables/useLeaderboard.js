@@ -7,6 +7,18 @@ export function useLeaderboard() {
     return [...scores.value].sort((a, b) => b.score - a.score)
   })
 
+  const getRankForScore = (score) => {
+    const uniqueHigherScores = new Set()
+
+    for (const entry of sorted.value) {
+      if (entry.score > score) {
+        uniqueHigherScores.add(entry.score)
+      }
+    }
+
+    return uniqueHigherScores.size + 1
+  }
+
   const addScore = (username, points) => {
     const existing = scores.value.find(s => s.username === username)
     if (existing) {
@@ -22,9 +34,8 @@ export function useLeaderboard() {
   }
 
   const getPlayerRank = (username) => {
-    const sortedPlayers = sorted.value
-    const rankIndex = sortedPlayers.findIndex(s => s.username === username)
-    return rankIndex >= 0 ? rankIndex + 1 : null
+    const player = sorted.value.find(s => s.username === username)
+    return player ? getRankForScore(player.score) : null
   }
 
   const getTopPlayers = (limit = 10) => {
@@ -41,6 +52,7 @@ export function useLeaderboard() {
     addScore,
     refresh,
     getPlayerRank,
+    getRankForScore,
     getTopPlayers,
     getTotalPlayers,
   }

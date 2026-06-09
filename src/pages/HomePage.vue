@@ -65,9 +65,9 @@ const handleKeyup = (e) => {
         </button>
       </div>
 
-      <div class="info">
+      <div class="info" @click="goToLeaderboard">
         <div class="info-item">
-          <span @click="goToLeaderboard">🏆 Leaderboard</span>
+          <span>🏆 Leaderboard</span>
         </div>
       </div>
     </div>

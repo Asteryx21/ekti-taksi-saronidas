@@ -248,7 +248,7 @@
       "LIght"
     ],
     "answer": "KIDD",
-    "points": 20
+    "points": 10
   },
   {
     "id": 22,
@@ -285,7 +285,7 @@
       "γατόπαρδος"
     ],
     "answer": "σκλιιιιιι",
-    "points": 20
+    "points": 10
   },
   {
     "id": 25,
@@ -322,7 +322,7 @@
       "Justin Bieber"
     ],
     "answer": "Tom Felton",
-    "points": 20
+    "points": 10
   },
   {
     "id": 28,
@@ -355,7 +355,7 @@
       "Λάθος"
     ],
     "answer": "Λάθος",
-    "points": 20
+    "points": 10
   },
   {
     "id": 31,
@@ -390,7 +390,7 @@
       "Λάθος"
     ],
     "answer": "Σωστό",
-    "points": 20
+    "points": 10
   },
   {
     "id": 34,
@@ -425,7 +425,7 @@
       "Λάθος"
     ],
     "answer": "Σωστό",
-    "points": 20
+    "points": 10
   },
   {
     "id": 37,
@@ -462,7 +462,7 @@
       "Φυσική"
     ],
     "answer": "ΚΠΑ",
-    "points": 20
+    "points": 10
   },
   {
     "id": 40,
@@ -497,7 +497,7 @@
       "Λάθος"
     ],
     "answer": "Σωστό",
-    "points": 20
+    "points": 10
   },
   {
     "id": 43,
@@ -532,7 +532,7 @@
       "Λάθος"
     ],
     "answer": "Λάθος",
-    "points": 20
+    "points": 10
   },
   {
     "id": 46,
@@ -567,7 +567,7 @@
       "στίβος"
     ],
     "answer": "στίβος",
-    "points": 20
+    "points": 10
   },
   {
     "id": 49,
@@ -604,6 +604,6 @@
       "Michael Jackson"
     ],
     "answer": "Donn",
-    "points": 20
+    "points": 10
   }
 ]
