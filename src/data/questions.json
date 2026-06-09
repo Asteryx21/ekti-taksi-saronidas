@@ -99,7 +99,7 @@
   },
   {
     "id": 9,
-    "type": "image-choice",
+    "type": "multiple-choice",
     "question": "Τα πρώτα κατοικίδια του Βασίλη Σ. λέγονταν:",
     "options": [
       "Φίφη-Φόφη",
@@ -107,7 +107,7 @@
       "Δημήτρης-Δανάη",
       "Μίκης-Μίμης"
     ],
-    "answer": "Guard",
+    "answer": "Μπάμπης-Σούλα",
     "points": 10
   },
   {
@@ -245,7 +245,7 @@
       "KIDD",
       "Donn",
       "XXXTentacion",
-      "LIght"
+      "Light"
     ],
     "answer": "KIDD",
     "points": 10
