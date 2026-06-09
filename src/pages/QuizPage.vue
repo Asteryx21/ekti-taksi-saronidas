@@ -1,21 +1,14 @@
 <script setup>
 import { onMounted, computed } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRouter } from 'vue-router'
 import { useGameState } from '../composables/useGameState'
 import { useAudio } from '../composables/useAudio'
 import QuestionCard from '../components/QuestionCard.vue'
 import ProgressBar from '../components/ProgressBar.vue'
-import studentsData from '../data/students.json'
 
-const route = useRoute()
 const router = useRouter()
 const gameState = useGameState()
 const audio = useAudio()
-
-const studentId = parseInt(route.params.studentId)
-const student = computed(() => {
-  return studentsData.find(s => s.id === studentId)
-})
 
 const currentQuestion = computed(() => {
   return gameState.getCurrentQuestion()
@@ -26,7 +19,9 @@ const progress = computed(() => {
 })
 
 onMounted(() => {
-  gameState.startQuiz(studentId)
+  if (gameState.currentQuestions.value.length === 0) {
+    gameState.startRandomQuiz()
+  }
 })
 
 const handleAnswer = (answer) => {
@@ -47,7 +42,7 @@ const handleAnswer = (answer) => {
 }
 
 const goBack = () => {
-  gameState.quizStarted.value = false
+  gameState.resetQuiz()
   router.back()
 }
 </script>
@@ -56,24 +51,17 @@ const goBack = () => {
   <div class="quiz-page">
     <div class="quiz-container">
       <header class="quiz-header">
-        <button @click="goBack" class="back-button">← Back</button>
-        <div class="student-info">
-          <h2>{{ student?.name }}</h2>
-        </div>
       </header>
 
       <div class="progress-section">
-        <ProgressBar
-          :current="progress.current"
-          :total="progress.total"
-        />
+        
       </div>
 
       <div class="question-section">
         <QuestionCard
           v-if="currentQuestion"
           :question="currentQuestion"
-          :student-name="student?.name"
+          student-name="Random Quiz"
           :question-number="progress.current"
           :total-questions="progress.total"
           @answer="handleAnswer"

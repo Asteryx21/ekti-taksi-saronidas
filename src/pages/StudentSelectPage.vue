@@ -10,8 +10,9 @@ const gameState = useGameState()
 
 const students = computed(() => studentsData)
 
-const selectStudent = (studentId) => {
-  router.push('/quiz/' + studentId)
+const selectStudent = () => {
+  gameState.startRandomQuiz()
+  router.push('/quiz')
 }
 
 const goBack = () => {
@@ -33,8 +34,7 @@ const goBack = () => {
           v-for="student in students"
           :key="student.id"
           :student="student"
-          :completed="gameState.completedStudents.value.includes(student.id)"
-          @select="selectStudent"
+          :onSelect="selectStudent"
         />
       </div>
 

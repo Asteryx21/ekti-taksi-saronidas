@@ -1,800 +1,609 @@
 [
   {
-    "studentId": 1,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What is Maria's favorite color?",
-        "options": [
-          "Blue",
-          "Pink",
-          "Green",
-          "Purple"
-        ],
-        "answer": "Pink",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Maria loves to paint and draw.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "How many pets does Maria have?",
-        "options": [
-          "1",
-          "2",
-          "3",
-          "4"
-        ],
-        "answer": "2",
-        "points": 20
-      }
-    ]
+    "id": 1,
+    "type": "multiple-choice",
+    "question": "Ποιος είναι ο αγαπημένος τραγουδιστής της Δανάης;",
+    "options": [
+      "Σάκης Ρουβάς",
+      "Billie Eilish",
+      "KIDD",
+      "Olivia Rodrigo"
+    ],
+    "answer": "KIDD",
+    "points": 10
   },
   {
-    "studentId": 4,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What is Carlos's favorite hobby?",
-        "options": [
-          "Video games",
-          "Building models",
-          "Cycling",
-          "Drawing"
-        ],
-        "answer": "Building models",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Carlos is very good at solving puzzles.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "What type of models does Carlos like to build?",
-        "options": [
-          "Cars",
-          "Robots",
-          "Airplanes",
-          "Ships"
-        ],
-        "answer": "Robots",
-        "points": 20
-      }
-    ]
+    "id": 2,
+    "type": "true-false",
+    "question": "Το αγαπημένο ζώο της Δανάης είναι η γάτα.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Λάθος",
+    "points": 10
   },
   {
-    "studentId": 6,
-    "questions": [
-      {
-        "id": 1,
-        "type": "true-false",
-        "question": "Pedro is a member of the school's basketball team.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "multiple-choice",
-        "question": "What is Pedro's favorite snack?",
-        "options": [
-          "Popcorn",
-          "Chocolate",
-          "Chips",
-          "Fruit"
-        ],
-        "answer": "Popcorn",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "image-choice",
-        "question": "What position does Pedro play in basketball?",
-        "options": [
-          "Guard",
-          "Forward",
-          "Center",
-          "Coach"
-        ],
-        "answer": "Guard",
-        "points": 20
-      }
-    ]
+    "id": 3,
+    "type": "multiple-choice",
+    "question": "Ποια είναι η αγαπημένη χώρα της Δανάης;",
+    "options": [
+      "Ελλάδα",
+      "Βραζιλία",
+      "Ισπανία",
+      "Ιταλία"
+    ],
+    "answer": "Βραζιλία",
+    "points": 10
   },
   {
-    "studentId": 7,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What is Lucia's favorite animal?",
-        "options": [
-          "Dog",
-          "Cat",
-          "Horse",
-          "Rabbit"
-        ],
-        "answer": "Horse",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Lucia has riding lessons every Saturday.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "What is the name of Lucia's horse?",
-        "options": [
-          "Star",
-          "Luna",
-          "Beauty",
-          "Prince"
-        ],
-        "answer": "Luna",
-        "points": 20
-      }
-    ]
+    "id": 4,
+    "type": "multiple-choice",
+    "question": "Ποια είναι η αγαπημένη ταινία/σειρά του Παναγιώτη;",
+    "options": [
+      "8 mile",
+      "Stranger Things",
+      "Jujutsu Kaisen",
+      "Πειρατές της Καραϊβικής"
+    ],
+    "answer": "8 mile",
+    "points": 10
   },
   {
-    "studentId": 9,
-    "questions": [
-      {
-        "id": 1,
-        "type": "true-false",
-        "question": "Elena is part of the school's dance group.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "multiple-choice",
-        "question": "What style of dance does Elena practice?",
-        "options": [
-          "Ballet",
-          "Hip-hop",
-          "Contemporary",
-          "Jazz"
-        ],
-        "answer": "Contemporary",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "image-choice",
-        "question": "How often does Elena have dance rehearsals?",
-        "options": [
-          "Once a week",
-          "Twice a week",
-          "Three times a week",
-          "Every day"
-        ],
-        "answer": "Twice a week",
-        "points": 20
-      }
-    ]
+    "id": 5,
+    "type": "true-false",
+    "question": "Κάποιος που θαυμάζει ο Παναγιώτης είναι ο XXXTentacion.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
   },
   {
-    "studentId": 10,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What is Lucas's favorite video game?",
-        "options": [
-          "Chess",
-          "Adventure Quest",
-          "Racing",
-          "Puzzle Master"
-        ],
-        "answer": "Adventure Quest",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Lucas is part of the school's gaming club.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "What achievement has Lucas reached in his favorite game?",
-        "options": [
-          "Level 10",
-          "Level 50",
-          "Level 100",
-          "Final Boss"
-        ],
-        "answer": "Level 100",
-        "points": 20
-      }
-    ]
+    "id": 6,
+    "type": "true-false",
+    "question": "Το όνομα του πρώτου κατοικιδίου του Παναγιώτη είναι Τάισον.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
   },
   {
-    "studentId": 11,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What is Isabela's favorite book series?",
-        "options": [
-          "Fantasy Quest",
-          "Mystery Manor",
-          "Adventure Island",
-          "Fairy Tales"
-        ],
-        "answer": "Fantasy Quest",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Isabela wants to be an author when she grows up.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "How many books has Isabela written so far?",
-        "options": [
-          "1",
-          "3",
-          "5",
-          "7"
-        ],
-        "answer": "3",
-        "points": 20
-      }
-    ]
+    "id": 7,
+    "type": "multiple-choice",
+    "question": "Το αγαπημένο φαγητό του Βασίλη Σ. είναι:",
+    "options": [
+      "Μακαρόνια με κιμά",
+      "Chicken nuggets",
+      "Burger",
+      "Pizza"
+    ],
+    "answer": "Chicken nuggets",
+    "points": 10
   },
   {
-    "studentId": 16,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What is Gabriel's favorite outdoor activity?",
-        "options": [
-          "Hiking",
-          "Camping",
-          "Rock climbing",
-          "Kayaking"
-        ],
-        "answer": "Rock climbing",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Gabriel has climbed three different mountains.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "What is the highest mountain Gabriel has climbed?",
-        "options": [
-          "1000m",
-          "1500m",
-          "2000m",
-          "2500m"
-        ],
-        "answer": "2000m",
-        "points": 20
-      }
-    ]
+    "id": 8,
+    "type": "multiple-choice",
+    "question": "Το αγαπημένο μάθημα του Βασίλη Σ. είναι:",
+    "options": [
+      "Ιστορία",
+      "Γεωγραφία",
+      "Μαθηματικά",
+      "Γυμναστική"
+    ],
+    "answer": "Γεωγραφία",
+    "points": 10
   },
   {
-    "studentId": 17,
-    "questions": [
-      {
-        "id": 1,
-        "type": "true-false",
-        "question": "Amelia volunteers at the animal shelter.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "multiple-choice",
-        "question": "What is Amelia's favorite animal to care for?",
-        "options": [
-          "Dogs",
-          "Cats",
-          "Rabbits",
-          "Birds"
-        ],
-        "answer": "Dogs",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "How often does Amelia volunteer?",
-        "options": [
-          "Weekly",
-          "Bi-weekly",
-          "Monthly",
-          "Daily"
-        ],
-        "answer": "Weekly",
-        "points": 20
-      }
-    ]
+    "id": 9,
+    "type": "image-choice",
+    "question": "Τα πρώτα κατοικίδια του Βασίλη Σ. λέγονταν:",
+    "options": [
+      "Φίφη-Φόφη",
+      "Μπάμπης-Σούλα",
+      "Δημήτρης-Δανάη",
+      "Μίκης-Μίμης"
+    ],
+    "answer": "Guard",
+    "points": 10
   },
   {
-    "studentId": 18,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What does Tomás love about science?",
-        "options": [
-          "Experiments",
-          "Astronomy",
-          "Biology",
-          "Chemistry"
-        ],
-        "answer": "Astronomy",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Tomás has a telescope at home.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "image-choice",
-        "question": "What is Tomás's favorite planet to observe?",
-        "options": [
-          "Mars",
-          "Jupiter",
-          "Saturn",
-          "Venus"
-        ],
-        "answer": "Saturn",
-        "points": 20
-      }
-    ]
+    "id": 10,
+    "type": "true-false",
+    "question": "Η αγαπημένη ταινία του Μάριου είναι το Interstellar.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
   },
   {
-    "studentId": 22,
-    "questions": [
-      {
-        "id": 1,
-        "type": "true-false",
-        "question": "Duarte is a member of the debate team.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "multiple-choice",
-        "question": "What topics does Duarte like to debate?",
-        "options": [
-          "Sports",
-          "Politics",
-          "Technology",
-          "Environment"
-        ],
-        "answer": "Environment",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "image-choice",
-        "question": "How many debate competitions has Duarte won?",
-        "options": [
-          "2",
-          "4",
-          "6",
-          "8"
-        ],
-        "answer": "4",
-        "points": 20
-      }
-    ]
+    "id": 11,
+    "type": "true-false",
+    "question": "Το αγαπημένο άθλημα του Μάριου είναι το ποδόσφαιρο.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Λάθος",
+    "points": 10
   },
   {
-    "studentId": 23,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What does Rita collect?",
-        "options": [
-          "Stamps",
-          "Coins",
-          "Vintage records",
-          "Comic books"
-        ],
-        "answer": "Vintage records",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Rita has over 100 records in her collection.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "What is Rita's oldest record?",
-        "options": [
-          "1960s",
-          "1970s",
-          "1980s",
-          "1990s"
-        ],
-        "answer": "1960s",
-        "points": 20
-      }
-    ]
+    "id": 12,
+    "type": "true-false",
+    "question": "Το celebrity crush του Μάριου είναι η Σάντρα από \"Το σόι σου\"",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
   },
   {
-    "studentId": 24,
-    "questions": [
-      {
-        "id": 1,
-        "type": "true-false",
-        "question": "Afonso is interested in mechanical engineering.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "multiple-choice",
-        "question": "What does Afonso like to build most?",
-        "options": [
-          "Engines",
-          "Robots",
-          "Machines",
-          "Bridges"
-        ],
-        "answer": "Machines",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "image-choice",
-        "question": "What tool is Afonso's favorite?",
-        "options": [
-          "Hammer",
-          "Wrench",
-          "Screwdriver",
-          "Drill"
-        ],
-        "answer": "Wrench",
-        "points": 20
-      }
-    ]
+    "id": 13,
+    "type": "true-false",
+    "question": "Το celebrity crush της Συμεώνης είναι ο Tom Holland.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
   },
   {
-    "studentId": 25,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What sport does Joana participate in?",
-        "options": [
-          "Tennis",
-          "Badminton",
-          "Squash",
-          "Volleyball"
-        ],
-        "answer": "Badminton",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Joana is ranked in her regional badminton league.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "What is Joana's current ranking?",
-        "options": [
-          "5th",
-          "10th",
-          "15th",
-          "20th"
-        ],
-        "answer": "10th",
-        "points": 20
-      }
-    ]
+    "id": 14,
+    "type": "multiple-choice",
+    "question": "Η αγαπημένη τραγουδίστρια της Συμεώνης είναι η... ",
+    "options": [
+      "Shakira",
+      "Rihanna",
+      "Olivia Rodrigo",
+      "Billie EIlish"
+    ],
+    "answer": "Billie EIlish",
+    "points": 10
   },
   {
-    "studentId": 29,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What is Inês's favorite type of music?",
-        "options": [
-          "Pop",
-          "Rock",
-          "Classical",
-          "Jazz"
-        ],
-        "answer": "Classical",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Inês plays in the school orchestra.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "What instrument does Inês play in the orchestra?",
-        "options": [
-          "Violin",
-          "Cello",
-          "Flute",
-          "Clarinet"
-        ],
-        "answer": "Cello",
-        "points": 20
-      }
-    ]
+    "id": 15,
+    "type": "multiple-choice",
+    "question": "Η χειρότερη ανάμνηση της Συμεώνης από το σχολείο ήταν που δε φάγαμε τυλιχτά την Τσικνοπέμπτη.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
   },
   {
-    "studentId": 32,
-    "questions": [
-      {
-        "id": 1,
-        "type": "true-false",
-        "question": "Paulo is a competitive programmer.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "multiple-choice",
-        "question": "What programming language does Paulo prefer?",
-        "options": [
-          "Python",
-          "Java",
-          "C++",
-          "JavaScript"
-        ],
-        "answer": "C++",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "image-choice",
-        "question": "How many programming competitions has Paulo won?",
-        "options": [
-          "3",
-          "5",
-          "7",
-          "9"
-        ],
-        "answer": "5",
-        "points": 20
-      }
-    ]
+    "id": 16,
+    "type": "multiple-choice",
+    "question": "Η καλύτερη σχολική ανάμνηση του Δημήτρη ήταν η Γιορτή της Γλώσσας.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
   },
   {
-    "studentId": 33,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What is Lurdes's favorite hobby?",
-        "options": [
-          "Knitting",
-          "Sewing",
-          "Embroidery",
-          "Quilting"
-        ],
-        "answer": "Embroidery",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Lurdes has won several awards for her embroidery.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "What is Lurdes's favorite embroidery technique?",
-        "options": [
-          "Cross-stitch",
-          "French knots",
-          "Chain stitch",
-          "Backstitch"
-        ],
-        "answer": "French knots",
-        "points": 20
-      }
-    ]
+    "id": 17,
+    "type": "true-false",
+    "question": "Το αγαπημένο μέρος διακοπών του Δημήτρη είναι η Κρήτη.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Λάθος",
+    "points": 10
   },
   {
-    "studentId": 37,
-    "questions": [
-      {
-        "id": 1,
-        "type": "multiple-choice",
-        "question": "What does Matilde love to create?",
-        "options": [
-          "Jewelry",
-          "Ceramics",
-          "Glass art",
-          "Sculpture"
-        ],
-        "answer": "Jewelry",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "true-false",
-        "question": "Matilde sells her jewelry at the local market.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "multiple-choice",
-        "question": "What is Matilde's favorite material?",
-        "options": [
-          "Silver",
-          "Gold",
-          "Beads",
-          "Crystals"
-        ],
-        "answer": "Silver",
-        "points": 20
-      }
-    ]
+    "id": 18,
+    "type": "multiple-choice",
+    "question": "Το αγαπημένο φαγητό του Δημήτρη είναι...",
+    "options": [
+      "Chicken nuggets",
+      "Αρακάς",
+      "Μακαρόνια με κιμά",
+      "Λαζάνια"
+    ],
+    "answer": "Μακαρόνια με κιμά",
+    "points": 10
   },
   {
-    "studentId": 40,
-    "questions": [
-      {
-        "id": 1,
-        "type": "true-false",
-        "question": "Zeferino is interested in history.",
-        "options": [
-          "True",
-          "False"
-        ],
-        "answer": "True",
-        "points": 10
-      },
-      {
-        "id": 2,
-        "type": "multiple-choice",
-        "question": "What historical period does Zeferino study most?",
-        "options": [
-          "Portuguese discoveries",
-          "World War II",
-          "Renaissance",
-          "Industrial Revolution"
-        ],
-        "answer": "Portuguese discoveries",
-        "points": 10
-      },
-      {
-        "id": 3,
-        "type": "image-choice",
-        "question": "How many history books has Zeferino read this year?",
-        "options": [
-          "5",
-          "10",
-          "15",
-          "20"
-        ],
-        "answer": "15",
-        "points": 20
-      }
-    ]
+    "id": 19,
+    "type": "multiple-choice",
+    "question": "Τα celebrity crushes του Βαγγέλη είναι...",
+    "options": [
+      "Kardashians",
+      "Kalogeras Sisters",
+      "Peter Anagnostopoulos & John Malaxianakis",
+      "Gatoulis & Gatoula"
+    ],
+    "answer": "Peter Anagnostopoulos & John Malaxianakis",
+    "points": 10
+  },
+  {
+    "id": 20,
+    "type": "true-false",
+    "question": "Το αγαπημένο φαγητό του Βαγγέλη είναι από το Beef Project.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Λάθος",
+    "points": 10
+  },
+  {
+    "id": 21,
+    "type": "multiple-choice",
+    "question": "Το αγαπημένο μουσικό άλμπουμ του Βαγγέλη είναι από...",
+    "options": [
+      "KIDD",
+      "Donn",
+      "XXXTentacion",
+      "LIght"
+    ],
+    "answer": "KIDD",
+    "points": 20
+  },
+  {
+    "id": 22,
+    "type": "multiple-choice",
+    "question": "Ποιο είναι το celebrity crush του Γιάννη;",
+    "options": [
+      "Kylie Jenner",
+      "Kim Kardashian",
+      "Kendall Jenner",
+      "Kourtney Kardashian"
+    ],
+    "answer": "Kim Kardashian",
+    "points": 10
+  },
+  {
+    "id": 23,
+    "type": "true-false",
+    "question": "Το αγαπημένο μέρος διακοπών του Γιάννη είναι η Κρήτη.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 24,
+    "type": "multiple-choice",
+    "question": "Ποιο είναι το αγαπημένο ζώο του Γιάννη;",
+    "options": [
+      "γάτα",
+      "γουρούνι",
+      "σκλιιιιιι",
+      "γατόπαρδος"
+    ],
+    "answer": "σκλιιιιιι",
+    "points": 20
+  },
+  {
+    "id": 25,
+    "type": "true-false",
+    "question": "Το αγαπημένο χρώμα της Όλγας είναι το χρυσό.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 26,
+    "type": "multiple-choice",
+    "question": "Ποια είναι η αγαπημένη ταινία της Όλγας;",
+    "options": [
+      "LOTR",
+      "Harry Potter",
+      "Πειρατές της Καραϊβικής",
+      "Jujutsu Kaisen"
+    ],
+    "answer": "Harry Potter",
+    "points": 10
+  },
+  {
+    "id": 27,
+    "type": "multiple-choice",
+    "question": "Ποιον διάσημο θαυμάζει η Όλγα;",
+    "options": [
+      "Tom Holland",
+      "Tom Felton",
+      "Kidd",
+      "Justin Bieber"
+    ],
+    "answer": "Tom Felton",
+    "points": 20
+  },
+  {
+    "id": 28,
+    "type": "true-false",
+    "question": "Το αγαπημένο τραγούδι της Ιωάννας είναι το Dream On",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 29,
+    "type": "true-false",
+    "question": "Η καλύτερη σχολική ανάμνηση της Ιωάννας ήταν η Γιορτή της Γλώσσας.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 30,
+    "type": "true-false",
+    "question": "Το χειρότερο φαγητό της Ιωάννας είναι ο αρακάς",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Λάθος",
+    "points": 20
+  },
+  {
+    "id": 31,
+    "type": "true-false",
+    "question": "Η χειρότερη ανάμνηση της Νεφέλης από το σχολείο είναι όταν τελειώνει το διάλειμμα.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 32,
+    "type": "multiple-choice",
+    "question": "Ποιο είναι το αγαπημένο χόμπι της Νεφέλης;",
+    "options": [
+      "Ζωγραφική",
+      "Go kart",
+      "Κλήση με Ίριδα στο insta",
+      "Χορός"
+    ],
+    "answer": "Κλήση με Ίριδα στο insta",
+    "points": 10
+  },
+  {
+    "id": 33,
+    "type": "multiple-choice",
+    "question": "Η αγαπημένη σειρά της Νεφέλης είναι το Vampire Diaries.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 20
+  },
+  {
+    "id": 34,
+    "type": "multiple-choice",
+    "question": "Ποιο είναι το αγαπημένο φαγητό της Ίριδας;",
+    "options": [
+      "Παστίτσιο",
+      "Σούσι",
+      "Σουβλάκι",
+      "Πίτσα"
+    ],
+    "answer": "Σούσι",
+    "points": 10
+  },
+  {
+    "id": 35,
+    "type": "true-false",
+    "question": "Το αγαπημένο χρώμα της Ίριδας είναι το μπλε.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 36,
+    "type": "multiple-choice",
+    "question": "Ο αγαπημένος τραγουδιστής της Ίριδας είναι ο KIDD.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 20
+  },
+  {
+    "id": 37,
+    "type": "true-false",
+    "question": "Το αγαπημένο χόμπι της Αριάδνης είναι ο χορός.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 38,
+    "type": "multiple-choice",
+    "question": "Ποιο είναι το αγαπημένο μέρος διακοπών της Αριάδνης;",
+    "options": [
+      "Κρήτη",
+      "Λευκάδα",
+      "Νάξος",
+      "Κύθηρα"
+    ],
+    "answer": "Κύθηρα",
+    "points": 10
+  },
+  {
+    "id": 39,
+    "type": "multiple-choice",
+    "question": "Ποιο είναι το χειρότερο μάθημα της Αριάδνης;",
+    "options": [
+      "ΚΠΑ",
+      "Μαθηματικά",
+      "Γλώσσα",
+      "Φυσική"
+    ],
+    "answer": "ΚΠΑ",
+    "points": 20
+  },
+  {
+    "id": 40,
+    "type": "multiple-choice",
+    "question": "Ποια είναι η αγαπημένη σειρά του Βασίλη Κ.; ",
+    "options": [
+      "One Piece",
+      "Jujutsu Kaisen",
+      "Naruto",
+      "Death Note"
+    ],
+    "answer": "Jujutsu Kaisen",
+    "points": 10
+  },
+  {
+    "id": 41,
+    "type": "true-false",
+    "question": "Το αγαπημένο χόμπι του Βασίλη Β. είναι η κιθάρα.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 42,
+    "type": "multiple-choice",
+    "question": "Το αγαπημένο φαγητό του Βασίλη Β. είναι η σκεπαστή.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 20
+  },
+  {
+    "id": 43,
+    "type": "multiple-choice",
+    "question": "Ποια είναι η αγαπημένη σειρά της Έλειας;",
+    "options": [
+      "Vampire Diaries",
+      "Stranger Things",
+      "Young Sheldon",
+      "Να μ'αγαπάς"
+    ],
+    "answer": "Stranger Things",
+    "points": 10
+  },
+  {
+    "id": 44,
+    "type": "true-false",
+    "question": "Κάποια που θαυμάζει η Έλεια είναι η Brooke Monk.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 45,
+    "type": "multiple-choice",
+    "question": "Το αγαπημένο άθλημα της Έλειας είναι το μπάσκετ.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Λάθος",
+    "points": 20
+  },
+  {
+    "id": 46,
+    "type": "true-false",
+    "question": "Το celebrity crush της Μελίνας είναι ο JB.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 47,
+    "type": "multiple-choice",
+    "question": "Κάποια που θαυμάζει η Μελίνα είναι η Olivia Rodrigo.",
+    "options": [
+      "Λάθος",
+      "Σωστό"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 48,
+    "type": "multiple-choice",
+    "question": "Ποιο είναι το αγαπημένο άθλημα της Μελίνας;",
+    "options": [
+      "βόλεϊ",
+      "πόλο",
+      "μπάσκετ",
+      "στίβος"
+    ],
+    "answer": "στίβος",
+    "points": 20
+  },
+  {
+    "id": 49,
+    "type": "multiple-choice",
+    "question": "Ποιο είναι το αγαπημένο χρώμα του Ελιάρντ;",
+    "options": [
+      "Μπλε",
+      "Κόκκινο",
+      "Κίτρινο",
+      "Μπλε"
+    ],
+    "answer": "Κόκκινο",
+    "points": 10
+  },
+  {
+    "id": 50,
+    "type": "true-false",
+    "question": "Το χειρότερο μάθημα του Ελιάρντ είναι η Ιστορία.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
+  },
+  {
+    "id": 51,
+    "type": "multiple-choice",
+    "question": "Ποιος είναι ο αγαπημένος τραγουδιστής του Ελιάρντ;",
+    "options": [
+      "KIDD",
+      "Billie Eilish",
+      "Donn",
+      "Michael Jackson"
+    ],
+    "answer": "Donn",
+    "points": 20
   }
 ]

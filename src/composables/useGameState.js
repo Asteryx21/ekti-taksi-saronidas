@@ -2,16 +2,39 @@ import { ref, computed } from 'vue'
 import questionsData from '../data/questions.json'
 
 const BONUS_POINTS = 10
+const QUESTIONS_PER_GAME = 3
+
+const readStoredJson = (key, fallback) => {
+  try {
+    const raw = localStorage.getItem(key)
+    return raw ? JSON.parse(raw) : fallback
+  } catch {
+    return fallback
+  }
+}
+
+const writeStoredJson = (key, value) => {
+  localStorage.setItem(key, JSON.stringify(value))
+}
+
+const shuffle = (items) => {
+  const pool = [...items]
+  const shuffled = []
+
+  while (pool.length > 0) {
+    const randomIndex = Math.floor(Math.random() * pool.length)
+    shuffled.push(pool.splice(randomIndex, 1)[0])
+  }
+
+  return shuffled
+}
 
 // Shared singleton state
 const username = ref(localStorage.getItem('quiz_username') || '')
 const currentScore = ref(0)
-const completedStudents = ref(
-  JSON.parse(localStorage.getItem('completed_students') || '[]')
-)
+const pickedQuestions = ref(readStoredJson('picked_questions', []))
 
 // Quiz flow state
-const currentStudentId = ref(null)
 const currentQuestionIndex = ref(0)
 const currentQuestions = ref([])
 const quizStarted = ref(false)
@@ -19,7 +42,7 @@ const answerHistory = ref([])
 
 export function useGameState() {
   const totalScore = computed(() => {
-    const scores = JSON.parse(localStorage.getItem('leaderboard') || '[]')
+    const scores = readStoredJson('leaderboard', [])
     const userEntry = scores.find(s => s.username === username.value)
     return userEntry?.score || 0
   })
@@ -33,21 +56,45 @@ export function useGameState() {
     currentScore.value += points
   }
 
-  const markStudentCompleted = (studentId) => {
-    if (!completedStudents.value.includes(studentId)) {
-      completedStudents.value.push(studentId)
+  const persistPickedQuestions = () => {
+    writeStoredJson('picked_questions', pickedQuestions.value)
+  }
 
-      localStorage.setItem(
-        'completed_students',
-        JSON.stringify(completedStudents.value)
-      )
+  const getAvailableQuestions = () => {
+    return questionsData.filter(question => !pickedQuestions.value.includes(question.id))
+  }
+
+  const pickRandomQuestions = (count = QUESTIONS_PER_GAME) => {
+    if (pickedQuestions.value.length >= questionsData.length) {
+      pickedQuestions.value = []
+      persistPickedQuestions()
     }
+
+    const availableQuestions = getAvailableQuestions()
+    const sourceQuestions = availableQuestions.length >= count
+      ? availableQuestions
+      : questionsData
+
+    const selectedQuestions = shuffle(sourceQuestions).slice(0, count)
+    const selectedIds = selectedQuestions.map(question => question.id)
+
+    pickedQuestions.value = [...new Set([
+      ...pickedQuestions.value,
+      ...selectedIds,
+    ])]
+    persistPickedQuestions()
+
+    return selectedQuestions
+  }
+
+  const startRandomQuiz = () => {
+    const selectedQuestions = pickRandomQuestions()
+    startQuiz(selectedQuestions)
+    return selectedQuestions
   }
 
   const saveLeaderboardScore = (score) => {
-    const leaderboard = JSON.parse(
-      localStorage.getItem('leaderboard') || '[]'
-    )
+    const leaderboard = readStoredJson('leaderboard', [])
 
     const existingIndex = leaderboard.findIndex(
       entry => entry.username === username.value
@@ -62,21 +109,15 @@ export function useGameState() {
       })
     }
 
-    localStorage.setItem('leaderboard', JSON.stringify(leaderboard))
+    writeStoredJson('leaderboard', leaderboard)
   }
 
-  const startQuiz = (studentId) => {
-    currentStudentId.value = studentId
+  const startQuiz = (questions = []) => {
     currentQuestionIndex.value = 0
     currentScore.value = 0
     answerHistory.value = []
     quizStarted.value = true
-
-    const studentQuestions = questionsData.find(
-      q => q.studentId === studentId
-    )
-
-    currentQuestions.value = studentQuestions?.questions || []
+    currentQuestions.value = questions
   }
 
   const getCurrentQuestion = () => {
@@ -118,8 +159,7 @@ export function useGameState() {
 
     currentQuestionIndex.value += 1
 
-    const isComplete =
-      currentQuestionIndex.value >= currentQuestions.value.length
+    const isComplete = currentQuestionIndex.value >= currentQuestions.value.length
 
     if (isComplete) {
       finishQuiz()
@@ -133,67 +173,53 @@ export function useGameState() {
       answerHistory.value.length > 0 &&
       answerHistory.value.every(a => a.isCorrect)
 
-    // Apply bonus only once
     if (allCorrect) {
       currentScore.value += BONUS_POINTS
     }
 
+    const questionIds = currentQuestions.value.map(question => question.id)
+
     const currentResults = {
       answerHistory: answerHistory.value,
       currentScore: currentScore.value,
-      currentStudentId: currentStudentId.value,
+      questionIds,
     }
 
-    localStorage.setItem(
-      'current_quiz_results',
-      JSON.stringify(currentResults)
-    )
+    writeStoredJson('current_quiz_results', currentResults)
 
-    const quizHistory = JSON.parse(
-      localStorage.getItem('quiz_history') || '[]'
-    )
+    const quizHistory = readStoredJson('quiz_history', [])
 
     quizHistory.push({
       username: username.value,
-      studentId: currentStudentId.value,
+      questionIds,
       score: currentScore.value,
       completedAt: new Date().toISOString(),
       allCorrect,
       answerCount: answerHistory.value.length,
     })
 
-    localStorage.setItem(
-      'quiz_history',
-      JSON.stringify(quizHistory)
-    )
-
-    markStudentCompleted(currentStudentId.value)
-
+    writeStoredJson('quiz_history', quizHistory)
     saveLeaderboardScore(currentScore.value)
-
     quizStarted.value = false
   }
 
   const getCurrentQuizResults = () => {
-    return JSON.parse(
-      localStorage.getItem('current_quiz_results') || '{}'
-    )
+    return readStoredJson('current_quiz_results', {})
   }
 
   const resetQuiz = () => {
-    currentStudentId.value = null
     currentQuestionIndex.value = 0
     currentQuestions.value = []
     answerHistory.value = []
     currentScore.value = 0
+    quizStarted.value = false
   }
 
   return {
     username,
     currentScore,
-    completedStudents,
+    pickedQuestions,
     totalScore,
-    currentStudentId,
     currentQuestionIndex,
     currentQuestions,
     quizStarted,
@@ -201,7 +227,7 @@ export function useGameState() {
 
     setUsername,
     addScore,
-    markStudentCompleted,
+    startRandomQuiz,
     saveLeaderboardScore,
     startQuiz,
     getCurrentQuestion,

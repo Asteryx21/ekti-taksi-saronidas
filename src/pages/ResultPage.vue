@@ -2,16 +2,9 @@
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useGameState } from '../composables/useGameState'
-import studentsData from '../data/students.json'
 
 const router = useRouter()
 const gameState = useGameState()
-
-const student = computed(() => {
-  return studentsData.find(
-    s => s.id === gameState.currentStudentId.value
-  )
-})
 
 const allCorrect = computed(() => {
   return (
@@ -55,7 +48,7 @@ const goHome = () => {
       </header>
 
       <div class="result-card">
-        <h2>{{ student?.name }}</h2>
+        <h2>Round Summary</h2>
 
         <div class="score-section">
           <div class="score-display">
@@ -70,6 +63,16 @@ const goHome = () => {
         </div>
 
         <div class="results-details">
+          <div class="detail-item">
+            <span class="detail-label">
+              Questions Played:
+            </span>
+
+            <span class="detail-value">
+              {{ totalQuestions }}
+            </span>
+          </div>
+
           <div class="detail-item">
             <span class="detail-label">
               Correct Answers:
@@ -108,7 +111,7 @@ const goHome = () => {
           v-if="allCorrect"
           class="completion-badge"
         >
-          ⭐ Student Completed ⭐
+          ⭐ Quiz Perfect ⭐
         </div>
       </div>
 
@@ -222,24 +225,18 @@ const goHome = () => {
 .detail-item {
   display: flex;
   justify-content: space-between;
-  padding: var(--spacing-md);
-  background: var(--color-gray-light);
-  border-radius: var(--radius-md);
-  border-left: 4px solid var(--color-gold);
+  align-items: center;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--color-gray-light);
 }
 
-.detail-item.bonus {
-  background: linear-gradient(
-    135deg,
-    rgba(235, 169, 9, 0.1),
-    rgba(241, 174, 216, 0.1)
-  );
-  border-left-color: var(--color-purple);
+.detail-item:last-child {
+  border-bottom: none;
 }
 
 .detail-label {
-  font-weight: 600;
   color: var(--color-gray-dark);
+  font-weight: 500;
 }
 
 .detail-value {
@@ -248,8 +245,19 @@ const goHome = () => {
 }
 
 .detail-value.total {
-  font-size: 1.2rem;
   color: var(--color-gold);
+  font-size: 1.2rem;
+}
+
+.bonus {
+  background: linear-gradient(
+    135deg,
+    rgba(235, 169, 9, 0.1),
+    rgba(241, 174, 216, 0.1)
+  );
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  border-bottom: none;
 }
 
 .completion-badge {
@@ -257,10 +265,10 @@ const goHome = () => {
   padding: var(--spacing-md);
   background: linear-gradient(135deg, var(--color-gold), var(--color-pink));
   color: var(--color-white);
-  font-size: 1.1rem;
-  font-weight: 700;
   border-radius: var(--radius-md);
-  animation: pulse 1.5s ease-in-out infinite;
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  animation: pulse 1.5s infinite;
 }
 
 .actions {
@@ -272,20 +280,38 @@ const goHome = () => {
   padding: var(--spacing-md);
   font-size: 1.1rem;
   font-weight: 700;
-  border: 3px solid var(--color-purple);
+  cursor: pointer;
+  border: 3px solid;
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
 }
 
 .leaderboard-btn {
-  background: var(--color-white);
-  color: var(--color-purple);
+  background: linear-gradient(135deg, var(--color-gold), var(--color-yellow));
+  border-color: var(--color-gold);
+  color: var(--color-white);
+}
+
+.leaderboard-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(235, 169, 9, 0.3);
+}
+
+.back-option {
+  text-align: center;
 }
 
 .home-link {
-  width: 100%;
-  background: transparent;
+  background: none;
+  border: none;
   color: var(--color-purple);
-  padding: var(--spacing-sm);
-  font-size: 0.95rem;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.home-link:hover {
+  color: var(--color-gold);
 }
 
 @media (max-width: 640px) {
@@ -297,18 +323,13 @@ const goHome = () => {
     padding: var(--spacing-lg);
   }
 
-  .celebration,
-  .result-title {
-    font-size: 1.6rem;
+  .result-title,
+  .celebration {
+    font-size: 1.5rem;
   }
 
   .score-value {
     font-size: 2rem;
-  }
-
-  .detail-item {
-    flex-direction: column;
-    gap: var(--spacing-xs);
   }
 }
 </style>

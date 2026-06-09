@@ -28,9 +28,13 @@ const router = createRouter({
       redirect: '/students',
     },
     {
-      path: '/quiz/:studentId',
+      path: '/quiz',
       name: 'Quiz',
       component: QuizPage,
+    },
+    {
+      path: '/quiz/:studentId',
+      redirect: '/quiz',
     },
     {
       path: '/result',

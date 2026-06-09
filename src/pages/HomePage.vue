@@ -23,7 +23,8 @@ const startGame = () => {
   }
 
   gameState.setUsername(username.value.trim())
-  router.push('/students')
+  gameState.startRandomQuiz()
+  router.push('/quiz')
 }
 
 const handleKeyup = (e) => {
@@ -37,8 +38,7 @@ const handleKeyup = (e) => {
   <div class="home-page">
     <div class="content">
       <div class="header">
-        <h1 class="title">🎮 Saronida Quiz Game</h1>
-        <p class="subtitle">Enter your username to start playing.</p>
+        <h2 class="title">🎮 ΣT ' 1 Quiz Game</h2>
       </div>
 
       <div class="form-container">

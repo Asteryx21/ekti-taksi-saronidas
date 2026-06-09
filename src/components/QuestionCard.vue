@@ -1,15 +1,14 @@
 <template>
   <div class="question-card slideIn">
-    <div class="progress-section">
+    <!-- <div class="progress-section">
       <p class="progress-text">Question {{ questionNumber }} of {{ totalQuestions }}</p>
       <div class="progress-bar-container">
         <div class="progress-bar" :style="{ width: progressPercent + '%' }"></div>
       </div>
-    </div>
+    </div> -->
 
     <div class="question-header">
       <h1 class="question-text">{{ question.question || question.text }}</h1>
-      <p class="student-greeting">for {{ studentName }}</p>
     </div>
 
     <div class="options-container">
@@ -180,7 +179,7 @@ const handleAnswer = (option) => {
 
 .option-3 {
   background: var(--color-pink);
-  color: var(--color-white);
+  color: var(--color-gray-dark);
   border-color: var(--color-pink);
 }
 
