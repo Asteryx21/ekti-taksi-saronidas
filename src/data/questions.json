@@ -605,5 +605,42 @@
     ],
     "answer": "Donn",
     "points": 10
+  },
+    {
+    "id": 52,
+    "type": "multiple-choice",
+    "question": "Ποιο είναι το αγαπημένο χόμπι του Ιάσωνα;",
+    "options": [
+      "go kart",
+      "κιθάρα",
+      "μαγειρική",
+      "ψαροντούφεκο"
+    ],
+    "answer": "ψαροντούφεκο",
+    "points": 10
+  },
+    {
+    "id": 53,
+    "type": "multiple-choice",
+    "question": "Ποιο είναι το αγαπημένο άθλημα του Ιάσωνα;",
+    "options": [
+      "taekwondo",
+      "καράτε",
+      "kick boxing",
+      "κουνγκ φου"
+    ],
+    "answer": "kick boxing",
+    "points": 10
+  },
+    {
+    "id": 54,
+    "type": "true-false",
+    "question": "Η αγαπημένη ταινία του Ιάσωνα είναι το Karate Kid.",
+    "options": [
+      "Σωστό",
+      "Λάθος"
+    ],
+    "answer": "Σωστό",
+    "points": 10
   }
 ]
